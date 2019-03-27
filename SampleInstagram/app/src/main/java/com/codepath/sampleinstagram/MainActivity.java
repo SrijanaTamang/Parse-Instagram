@@ -150,6 +150,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+
     private void queryPosts() {
         ParseQuery<Post> postQuery = new ParseQuery<Post>(Post.class);
         postQuery.include(Post.KEY_USER);

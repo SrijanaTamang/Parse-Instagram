@@ -4,19 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center_horizontal"
     tools:context=".LoginActivity"
     android:layout_marginBottom="10dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    >
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/pacifico"
+        android:text="Instagram"
+        android:textColor="@android:color/black"
+        android:textSize="60dp"
+        android:textStyle="normal|bold"
+        android:layout_margin="10dp"
+        />
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/username"
-        android:inputType="text" />
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        />
 
 
     <android.support.design.widget.TextInputLayout
@@ -28,18 +43,30 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:inputType="textPassword" />
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_margin="10dp"
+            />
     </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"/>
+        android:text="Log In"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_margin="10dp"
 
+        />
 
-
+    <Button
+        android:id="@+id/etSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:background="@android:color/holo_green_light"
+        android:layout_margin="10dp"
+        />
 
 
 </LinearLayout>

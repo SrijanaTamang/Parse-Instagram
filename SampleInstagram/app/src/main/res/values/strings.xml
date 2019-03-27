@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sample Instagram</string>
+    <string name="password" />
+    <string name="username">username</string>
+    <string name="submit">Submit</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="description">Description</string>
+</resources>

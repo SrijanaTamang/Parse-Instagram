@@ -10,18 +10,11 @@
     android:gravity="center"
     >
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/pacifico"
-        android:text="Instagram"
-        android:textColor="@android:color/black"
-        android:textSize="60dp"
-        android:textStyle="normal|bold"
-        android:layout_margin="10dp"
-        />
+        app:srcCompat="@drawable/nav_logo_whiteout" />
 
     <EditText
         android:id="@+id/etUsername"
@@ -67,6 +60,8 @@
         android:background="@android:color/holo_green_light"
         android:layout_margin="10dp"
         />
+
+
 
 
 </LinearLayout>

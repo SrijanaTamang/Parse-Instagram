@@ -26,13 +26,13 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        ParseUser currentUser=ParseUser.getCurrentUser();
-        if(currentUser!=null) {
-            goMainActivity();
-        }
-
-        ParseUser.logOut();
-        currentUser = ParseUser.getCurrentUser();
+//        ParseUser currentUser=ParseUser.getCurrentUser();
+//        if(currentUser!=null) {
+//            goMainActivity();
+//        }
+//
+//        ParseUser.logOut();
+//        currentUser = ParseUser.getCurrentUser();
 
         etUsername=findViewById(R.id.etUsername);
         etPassword=findViewById(R.id.etPassword);
@@ -74,10 +74,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
-
 
     public void goMainActivity(){
         Log.d(TAG,"Navigating to MainActivity");

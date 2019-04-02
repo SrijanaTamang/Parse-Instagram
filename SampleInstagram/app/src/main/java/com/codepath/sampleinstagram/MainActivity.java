@@ -4,22 +4,31 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import com.codepath.sampleinstagram.fragments.ComposeFragment;
 import com.codepath.sampleinstagram.fragments.PostsFragment;
 import com.codepath.sampleinstagram.fragments.ProfileFragment;
 
+import org.json.JSONArray;
+
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     private final String TAG = "MainActivity";
     private BottomNavigationView bottomNavigationView;
+    private SwipeRefreshLayout swipeContainer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final FragmentManager fragmentManager = getSupportFragmentManager();
+
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
